@@ -1,0 +1,372 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #f0f2f5;
+  --secondary-color: #f83e7c;
+  --light-color: #fff;
+  --dark-color: #373737;
+  --font-color: #6c757d;
+  --font-color2: #344767;
+  --green-color: #5fd265;
+  --blue-color: #49a3f1;
+}
+
+#billing-section .container {
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+#billing-section .container .atm-card {
+  grid-column: 1/3;
+  background: url(../images/credit.jpg) no-repeat center center/cover;
+  color: var(--primary-color);
+  padding: 2rem 1rem 1rem 1rem;
+  border-radius: 13px;
+}
+#billing-section .container .atm-card i {
+  margin: 0 0 2rem 1rem;
+}
+#billing-section .container .atm-card .number {
+  margin-bottom: 4rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+#billing-section .container .atm-card .mast {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#billing-section .container .atm-card .mast .master {
+  display: flex;
+  gap: 1.5rem;
+}
+#billing-section .container .atm-card .mast .master p {
+  font-size: 0.8rem;
+  color: #c0c2c4;
+}
+#billing-section .container .atm-card .mast img {
+  width: 10%;
+  transform: translateY(12px);
+}
+#billing-section .container .white-card {
+  background: var(--light-color);
+  border-radius: 10px;
+  color: var(--font-color2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+#billing-section .container .white-card i {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+#billing-section .container .white-card p {
+  margin: 0.5rem 0 2.5rem 0;
+  font-size: 0.8rem;
+}
+#billing-section .container .white-card h3 {
+  font-size: 1.3rem;
+}
+#billing-section .container .payment-method {
+  grid-column: 1/3;
+  background: var(--light-color);
+  border-radius: 10px;
+  color: var(--font-color2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem 0 1rem;
+}
+#billing-section .container .payment-method .method {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+#billing-section .container .payment-method .method span {
+  background: var(--dark-color);
+  color: var(--primary-color);
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#billing-section .container .payment-method .master {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  border: 1px solid #dce0e2;
+  border-radius: 10px;
+  margin: 1.2rem 0;
+}
+#billing-section .container .payment-method .master .ash {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#billing-section .container .payment-method .master .ash span {
+  font-weight: bold;
+  color: var(--font-color2);
+}
+#billing-section .container .payment-method .master img {
+  width: 10%;
+}
+#billing-section .container .invoices {
+  grid-column: 1/3;
+  background: var(--light-color);
+  border-radius: 10px;
+  color: var(--font-color2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 1rem 1rem 0 1rem;
+}
+#billing-section .container .invoices .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--font-color2);
+  font-weight: bold;
+}
+#billing-section .container .invoices .header a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  font-size: 0.7rem;
+}
+#billing-section .container .invoices .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+#billing-section .container .invoices .body .march {
+  color: var(--font-color2);
+}
+#billing-section .container .invoices .body .march h4 {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+#billing-section .container .invoices .body .march p {
+  font-size: 0.8rem;
+}
+#billing-section .container .invoices .body .dolls {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+#billing-section .container .invoices .body .dolls .pdf {
+  color: var(--font-color2);
+}
+#billing-section .container .invoices .body .dolls .pdf i {
+  margin-right: 5px;
+}
+#billing-section .container .invoices .body .dolls .pdf span {
+  font-weight: bold;
+}
+
+#billing-information .container {
+  margin: 1rem;
+}
+#billing-information .container .billing {
+  background: var(--light-color);
+  color: var(--font-color);
+  padding: 1rem 1rem 0.1rem 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+#billing-information .container .billing h4 {
+  color: var(--font-color2);
+  margin: 1rem 0;
+}
+#billing-information .container .billing .oliv {
+  background: #f8f9fa;
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 10px;
+}
+#billing-information .container .billing .oliv .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#billing-information .container .billing .oliv .header .del {
+  color: var(--font-color2);
+  font-size: 0.7rem;
+  transform: translateY(20px);
+}
+#billing-information .container .billing .oliv .header .del span {
+  display: block;
+}
+#billing-information .container .billing .oliv .header .del span:first-child {
+  color: red;
+  margin-right: 5px;
+  margin-bottom: 1rem;
+}
+#billing-information .container .billing .oliv .header .del span i {
+  margin-right: 8px;
+}
+#billing-information .container .billing .oliv p {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+#billing-information .container .billing .oliv p span {
+  display: block;
+  color: var(--font-color2);
+  font-weight: bold;
+  margin-top: 0.3rem;
+}
+#billing-information .container .transaction {
+  background: var(--light-color);
+  color: var(--font-color);
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+#billing-information .container .transaction .header h4 {
+  color: var(--font-color2);
+  margin-bottom: 0.5rem;
+}
+#billing-information .container .transaction .header span {
+  font-size: 0.9rem;
+}
+#billing-information .container .transaction .header span i {
+  margin-right: 5px;
+}
+#billing-information .container .transaction .newest {
+  margin-top: 2rem;
+}
+#billing-information .container .transaction .newest h5 {
+  font-size: 0.7rem;
+  margin-bottom: 2rem;
+}
+#billing-information .container .transaction .newest .net {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#billing-information .container .transaction .newest .net .app {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+#billing-information .container .transaction .newest .net .app i, #billing-information .container .transaction .newest .net .app span {
+  padding: 0.6rem;
+  border: 1px solid var(--green-color);
+  border-radius: 50%;
+  color: var(--green-color);
+}
+#billing-information .container .transaction .newest .net .app .excl {
+  padding: 0.5rem 0.9rem;
+  color: var(--font-color2);
+  border-color: var(--font-color2);
+  font-weight: bold;
+}
+#billing-information .container .transaction .newest .net .app .fa-angle-down {
+  color: red;
+  border-color: red;
+}
+#billing-information .container .transaction .newest .net .app .mar {
+  font-size: 0.8rem;
+}
+#billing-information .container .transaction .newest .net .app .mar h4 {
+  color: var(--font-color2);
+  margin-bottom: 5px;
+}
+#billing-information .container .transaction .newest .net span {
+  color: var(--green-color);
+}
+#billing-information .container .transaction .newest .net .spant {
+  color: red;
+}
+#billing-information .container .transaction .newest .net .spa {
+  color: var(--font-color2);
+}
+
+@media screen and (min-width: 768px) {
+  #billing-section .container .atm-card .mast {
+    margin-bottom: 1rem;
+  }
+  #billing-section .container .payment-method .mast {
+    display: flex;
+    gap: 1.5rem;
+  }
+  #billing-information .container {
+    display: grid;
+    grid-template-columns: 58% 39%;
+    grid-gap: 1.5rem;
+  }
+  #billing-information .container .billing .oliv p span {
+    display: inline;
+  }
+  #billing-information .container .transaction {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 995px) {
+  #billing-section .container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 0.5rem;
+  }
+  #billing-section .container .wit {
+    grid-column: 1/2;
+  }
+  #billing-section .container .invoices {
+    grid-column: 3/4;
+    grid-row: 1/4;
+    margin-right: 0;
+  }
+  #billing-information .container .billing .oliv .header .del span {
+    display: inline;
+  }
+  #billing-information .container .billing .oliv .header .del span:first-child {
+    margin-right: 2rem;
+  }
+  #billing-information .container {
+    margin-right: 0;
+  }
+  #billing-information .container .transaction .header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #billing-section .container {
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 0;
+  }
+  #billing-section .container .atm-card {
+    grid-column: 1/3;
+  }
+  #billing-section .container .atm-card .mast {
+    margin-bottom: 0;
+  }
+  #billing-section .container .wit {
+    grid-column: 3/4;
+  }
+  #billing-section .container .wit2 {
+    grid-column: 4/5;
+  }
+  #billing-section .container .payment-method {
+    grid-column: 1/5;
+  }
+  #billing-section .container .invoices {
+    grid-column: 5/7;
+    margin-bottom: 1.5rem;
+  }
+  #billing-information .container {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=billing.css.map */
