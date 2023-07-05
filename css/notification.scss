@@ -217,6 +217,24 @@
 }
 
 //Media Queries
+@media screen and (max-width: 415px) {
+    #notification-section{
+        .container3{
+            .notal{
+                font-size: 0.7rem;
+
+                .header{
+                    .he1{
+                        h3{
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 768px) {
     #notification-section{
         max-width: 80%;

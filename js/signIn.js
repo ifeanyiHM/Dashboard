@@ -4,7 +4,7 @@ const closeMemu = document.querySelector('.ment');
 
 menu.addEventListener('click', () => {
     
-    if (header.style.height == '3.5rem') {
+    if (!header.style.height || header.style.height == '3.5rem') {
         header.style.height = '13.6rem';
         menu.classList.add('ment');
     } else {

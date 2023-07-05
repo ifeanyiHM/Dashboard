@@ -979,6 +979,23 @@ body{
             display: none;
         }
     }
+
+    #right-sidebar{
+        .container{
+            .type{
+                button{
+                    padding: 0.9rem;
+                    border: none;
+                    background: var(--font-color);
+                    color: var(--primary-color);
+                    border-radius: 8px;
+                    margin-right: 5px;
+                    font-size: 0.7rem;
+                    font-weight: 900;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 426px) {
