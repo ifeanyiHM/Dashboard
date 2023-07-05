@@ -176,6 +176,11 @@ document.querySelectorAll('.exit-note').forEach(exit =>{
     });
 });
 
+document.querySelectorAll('.ten').forEach(ten =>{
+    ten.addEventListener('click', (e) => {
+        e.target.parentElement.parentElement.parentElement.style.display = 'none';
+    });
+});
 
 document.querySelector('.success').addEventListener('click', () => {
     document.querySelector('.success-note').style.display = 'block';
