@@ -814,6 +814,11 @@ body:hover::-webkit-scrollbar-thumb {
     overflow-x: auto;
   }
 }
+@media screen and (max-width: 389px) {
+  #main-header .container div ul span:first-child i {
+    display: none;
+  }
+}
 @media screen and (max-width: 426px) {
   #main-header .container div ul .input input {
     width: 53px;
