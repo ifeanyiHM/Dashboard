@@ -88,7 +88,7 @@ fixMode.addEventListener('click', () => {
         navObserver.observe(header);
     } else {
         fixMode.classList.remove('modefix');
-        navObserver.observe(none);
+        navObserver.observe(body);
     }
 });
 
