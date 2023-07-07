@@ -7,10 +7,12 @@ let exit_nav = document.querySelector('.exit');
 
 open_nav.addEventListener('click', () =>{
     nav.style.transform = 'translate(0)';
+    document.body.style.overflow = 'hidden';
 });
 
 exit_nav.addEventListener('click', () => {
     nav.style.transform = 'translate(-100%)';
+    document.body.style.overflow = 'visible';
 });
 
 
@@ -23,14 +25,17 @@ let material = document.getElementById('material-section');
 
 open_config.addEventListener('click', () => {
     side_nav.style.transform = 'translate(0)';
+    document.body.style.overflow = 'hidden';
 });
 
 material.addEventListener('click', () => {
     side_nav.style.transform = 'translate(0)';
+    document.body.style.overflow = 'hidden';
 })
 
 close_config.addEventListener('click', () => {
     side_nav.style.transform = 'translate(100%)';
+    document.body.style.overflow = 'visible';
 });
 
 //Sidebar background color
@@ -59,17 +64,32 @@ toggleMode.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 });
 
-//Side Bar Colors
-const current = document.querySelector('.current');
-const bottomList = document.querySelector('.bottom-list');
-const sideColor = document.querySelectorAll('.side');
-sideColor.forEach((sidebtn) => {
-    sidebtn.addEventListener('click', () => {
-        current.style.background = sidebtn.dataset.color;
-        bottomList.firstElementChild.style.borderColor = sidebtn.dataset.color;
-        bottomList.firstElementChild.style.color = sidebtn.dataset.color;
-        bottomList.lastElementChild.style.background = sidebtn.dataset.color;
-    });
+//Fixed header
+const header = document.getElementById('main-header');
+const navOptions = {
+  rootMargin: "-100px 0px 0px 0px"
+};
+const navScroll = (entries) => {
+  const entry= entries[0];
+  if (!entry.isIntersecting) {
+    body.classList.add("fixed");
+  } else {
+    body.classList.remove("fixed");
+  }
+}
+const navObserver = new IntersectionObserver(navScroll, navOptions);
+
+
+const fixMode = document.querySelector('.fix-mode');
+fixMode.addEventListener('click', () => {
+    
+    if (fixMode.className == 'fix-mode') {
+        fixMode.classList.add('modefix');
+        navObserver.observe(header);
+    } else {
+        fixMode.classList.remove('modefix');
+        navObserver.observe(none);
+    }
 });
 
 //Action Navbar
@@ -84,6 +104,21 @@ if (actionBtn) {
         }
     });
 };
+
+
+//Side Bar Colors
+const current = document.querySelector('.current');
+const bottomList = document.querySelector('.bottom-list');
+const sideColor = document.querySelectorAll('.side');
+sideColor.forEach(sidebtn => {
+    sidebtn.addEventListener('click', () => {
+        current.style.background = sidebtn.dataset.color;
+        bottomList.firstElementChild.style.borderColor = sidebtn.dataset.color;
+        bottomList.firstElementChild.style.color = sidebtn.dataset.color;
+        bottomList.lastElementChild.style.background = sidebtn.dataset.color;
+    });
+});
+
 
 //Toggle sections
 
@@ -106,6 +141,7 @@ function showHead(head) {
 function background() {
     document.querySelectorAll('.gator').forEach(gate => {
         gate.classList.remove('current');
+        current.style.background = 'none';
     });
 }
 
@@ -118,7 +154,8 @@ document.querySelectorAll('.gator').forEach(gator => {
         const mq = window.matchMedia('(max-width: 1199px)');
         if (mq.matches) {
             nav.style.transform = 'translate(-100%)';
-        }   
+            document.body.style.overflow = 'visible';
+        }
     };
 });
 

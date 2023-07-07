@@ -217,11 +217,12 @@ body{
 }
 
 #main-header{
-    transition: all 0.4s;
+    transition: all 0.4s; 
 
     .container{
         color: var(--font-color);
-        margin: 1.5rem 2rem;
+        margin: 0.5rem 0;
+        padding: 1rem 2rem;
         transition: all 0.4s;
 
         .pry-cont{
@@ -245,7 +246,7 @@ body{
             list-style: none;
             display: flex;
             align-items: center;
-            gap: 18px;
+            gap: 1rem;
 
             .online, .sign, .input-in input, .open-side{
                 display: none;
@@ -292,6 +293,28 @@ body{
                 color: var(--font-color);
             }
         }
+    }
+}
+
+.fixed{
+    #main-header{
+        position: fixed;
+        z-index: 10;
+        right: 1rem;
+        left: 1rem;
+        top: 0;
+        width: calc(100% - 2rem);
+        background: rgb(255, 253, 253, 0.9);
+        border-radius: 10px;
+        margin: 0.5rem 0;
+    
+        .container{
+            margin: 0;
+        }
+    }
+    
+    #first-section{
+        margin-top: 12rem;
     }
 }
 
@@ -763,6 +786,7 @@ body{
         background: var(--light-color);
         padding: 2rem;
         position: relative;
+        overflow: auto;
 
         .section-header{
             h2{
@@ -837,6 +861,10 @@ body{
                 margin-right: 5px;
                 font-size: 0.7rem;
                 font-weight: 900;
+
+                &:last-child{
+                    margin-right: 0;
+                }
             }
         }
 
@@ -855,6 +883,7 @@ body{
                 border-radius: 30%;
                 background: #bdc3c7;
                 position: relative;
+                transition: all 0.5s;
 
                 &::before{
                     content: '';
@@ -866,6 +895,17 @@ body{
                     background: var(--light-color);
                     border: 1px solid #bdc3c7;
                     border-radius: 50%;
+                    transition: all 0.5s;
+                }
+            }
+
+            .modefix{
+                transition: all 0.5s;
+                background: #474646;
+    
+                &::before{
+                    transition: all 0.5s;
+                    transform: translate(80%);
                 }
             }
         }
@@ -1158,7 +1198,12 @@ body{
             }
             display: flex;
             justify-content: space-between;
-            
+        }
+    }
+
+    .fixed{ 
+        #first-section{
+            margin-top: 8rem;
         }
     }
 }
@@ -1199,6 +1244,22 @@ body{
         position: relative;
         width: calc(100% - 270px);
         left: 270px;
+    }
+
+    .fixed{
+        #main-header{
+            width: calc(100% - 270px - 2rem);
+            left: calc(270px + 1rem);
+        
+            .container{
+                background: rgb(255, 253, 253, 0.9);
+                border-radius: 10px;
+            }
+        }
+        
+        #first-section{
+            margin-top: 8rem;
+        }
     }
 
     #main-nav{

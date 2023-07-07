@@ -188,7 +188,8 @@ body:hover::-webkit-scrollbar-thumb {
 }
 #main-header .container {
   color: var(--font-color);
-  margin: 1.5rem 2rem;
+  margin: 0.5rem 0;
+  padding: 1rem 2rem;
   transition: all 0.4s;
 }
 #main-header .container .pry-cont {
@@ -208,7 +209,7 @@ body:hover::-webkit-scrollbar-thumb {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 1rem;
 }
 #main-header .container div ul .online, #main-header .container div ul .sign, #main-header .container div ul .input-in input, #main-header .container div ul .open-side {
   display: none;
@@ -247,6 +248,24 @@ body:hover::-webkit-scrollbar-thumb {
 #main-header .container div ul li .fa-bell, #main-header .container div ul li .fa-user {
   font-weight: bold;
   color: var(--font-color);
+}
+
+.fixed #main-header {
+  position: fixed;
+  z-index: 10;
+  right: 1rem;
+  left: 1rem;
+  top: 0;
+  width: calc(100% - 2rem);
+  background: rgba(255, 253, 253, 0.9);
+  border-radius: 10px;
+  margin: 0.5rem 0;
+}
+.fixed #main-header .container {
+  margin: 0;
+}
+.fixed #first-section {
+  margin-top: 12rem;
 }
 
 #first-section {
@@ -644,6 +663,7 @@ body:hover::-webkit-scrollbar-thumb {
   background: var(--light-color);
   padding: 2rem;
   position: relative;
+  overflow: auto;
 }
 #right-sidebar .container .section-header h2 {
   color: #344767;
@@ -709,6 +729,9 @@ body:hover::-webkit-scrollbar-thumb {
   font-size: 0.7rem;
   font-weight: 900;
 }
+#right-sidebar .container .type button:last-child {
+  margin-right: 0;
+}
 #right-sidebar .container .toggle {
   display: flex;
   justify-content: space-between;
@@ -723,6 +746,7 @@ body:hover::-webkit-scrollbar-thumb {
   border-radius: 30%;
   background: #bdc3c7;
   position: relative;
+  transition: all 0.5s;
 }
 #right-sidebar .container .toggle span::before {
   content: "";
@@ -734,6 +758,15 @@ body:hover::-webkit-scrollbar-thumb {
   background: var(--light-color);
   border: 1px solid #bdc3c7;
   border-radius: 50%;
+  transition: all 0.5s;
+}
+#right-sidebar .container .toggle .modefix {
+  transition: all 0.5s;
+  background: #474646;
+}
+#right-sidebar .container .toggle .modefix::before {
+  transition: all 0.5s;
+  transform: translate(80%);
 }
 #right-sidebar .container .lightmode span {
   transition: all 0.5s;
@@ -938,6 +971,9 @@ body:hover::-webkit-scrollbar-thumb {
   #main-header .container .pry-cont {
     margin-bottom: 0;
   }
+  .fixed #first-section {
+    margin-top: 8rem;
+  }
 }
 @media screen and (min-width: 990px) {
   #second-section .container {
@@ -966,6 +1002,17 @@ body:hover::-webkit-scrollbar-thumb {
     position: relative;
     width: calc(100% - 270px);
     left: 270px;
+  }
+  .fixed #main-header {
+    width: calc(100% - 270px - 2rem);
+    left: calc(270px + 1rem);
+  }
+  .fixed #main-header .container {
+    background: rgba(255, 253, 253, 0.9);
+    border-radius: 10px;
+  }
+  .fixed #first-section {
+    margin-top: 8rem;
   }
   #main-nav {
     transform: translate(0);
