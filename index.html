@@ -1,1400 +1,1436 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/table.css">
-    <link rel="stylesheet" href="css/billing.css">
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/notification.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <link rel="stylesheet" href="css/billing.css" />
+    <link rel="stylesheet" href="css/profile.css" />
+    <link rel="stylesheet" href="css/notification.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav id="main-nav">
-        <div class="container cont">
-            <div class="img-header">
-                <div class="img-logo">
-                    <i class="fa-solid fa-angle-up"></i>
-                    <i class="fa-solid fa-angle-up"></i>
-                    <i class="fa-solid fa-angle-down"></i>
-                </div>
-                <h5 class="joy">Material Dashboard 2</h5>
-                <i class="fa-solid fa-xmark exit"></i>
-            </div>
-            <div class="line"></div>
-            <div class="nav-list">
-                <ul>
-                    <li data-page="data1" data-head="header1" class="current gator tor">
-                        <i class="fa-solid fa-table love"></i>
-                        <a href="#" class="joy">
-                            Dashboard
-                        </a>
-                    </li>
-                    <li data-page="data2" data-head="header2" class="gator tor">
-                        <i class="fa-solid fa-wallet love"></i>
-                        <a href="#" class="joy">
-                            Table
-                        </a>
-                    </li>
-                    <li data-page="data3" data-head="header3" class="gator tor">
-                        <i class="fa-sharp fa-regular fa-id-card love"></i>
-                        <a href="#" class="joy">
-                            Billing
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-meteor love"></i>
-                        <a href="#" class="joy">
-                            Virtual Reality
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-tent-arrow-turn-left love"></i>
-                        <a href="#" class="joy">
-                            RTL
-                        </a>
-                    </li>
-                    <li data-page="data5" data-head="header5" class="gator tor">
-                        <i class="fa-solid fa-bell love"></i>
-                        <a href="#" class="joy">
-                            Notification
-                        </a>
-                    </li>
-                </ul>
-                <h5 class="joy acc">ACCOUNT PAGES</h5>
-                <ul>
-                    <li data-page="data4" data-head="header4" class="gator">
-                        <i class="fa-regular fa-user love"></i>
-                        <a href="#" class="joy">
-                            Profile
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-sharp fa-solid fa-right-to-bracket love"></i>
-                        <a href="signIn.html" class="joy">
-                            Sign In
-                        </a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-id-card-clip love"></i>
-                        <a href="signup.html" class="joy">
-                            Sign Up
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="bottom-list joy">
-                <a href="#">DOCUMENTATION</a>
-                <a href="#">UPGRADE TO PRO</a>
-            </div>
+      <div class="container cont">
+        <div class="img-header">
+          <div class="img-logo">
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-up"></i>
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <h5 class="joy">Material Dashboard 2</h5>
+          <i class="fa-solid fa-xmark exit"></i>
         </div>
+        <div class="line"></div>
+        <div class="nav-list">
+          <ul>
+            <li data-page="data1" data-head="header1" class="current gator tor">
+              <i class="fa-solid fa-table love"></i>
+              <a href="#" class="joy"> Dashboard </a>
+            </li>
+            <li data-page="data2" data-head="header2" class="gator tor">
+              <i class="fa-solid fa-wallet love"></i>
+              <a href="#" class="joy"> Table </a>
+            </li>
+            <li data-page="data3" data-head="header3" class="gator tor">
+              <i class="fa-sharp fa-regular fa-id-card love"></i>
+              <a href="#" class="joy"> Billing </a>
+            </li>
+            <li>
+              <i class="fa-solid fa-meteor love"></i>
+              <a href="#" class="joy"> Virtual Reality </a>
+            </li>
+            <li>
+              <i class="fa-solid fa-tent-arrow-turn-left love"></i>
+              <a href="#" class="joy"> RTL </a>
+            </li>
+            <li data-page="data5" data-head="header5" class="gator tor">
+              <i class="fa-solid fa-bell love"></i>
+              <a href="#" class="joy"> Notification </a>
+            </li>
+          </ul>
+          <h5 class="joy acc">ACCOUNT PAGES</h5>
+          <ul>
+            <li data-page="data4" data-head="header4" class="gator">
+              <i class="fa-regular fa-user love"></i>
+              <a href="#" class="joy"> Profile </a>
+            </li>
+            <li>
+              <i class="fa-sharp fa-solid fa-right-to-bracket love"></i>
+              <a href="signIn.html" class="joy"> Sign In </a>
+            </li>
+            <li>
+              <i class="fa-solid fa-id-card-clip love"></i>
+              <a href="signup.html" class="joy"> Sign Up </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-list joy">
+          <a href="#">DOCUMENTATION</a>
+          <a href="#">UPGRADE TO PRO</a>
+        </div>
+      </div>
     </nav>
     <header id="main-header">
-        <div class="container">
-            <div class="pry-cont pry1" id="header1">
-                <div>Pages /<span class="fade">Dashboard</span></div>
-                <h4>Dashboard</h4>
-            </div>
-            <div class="pry-cont pry2" id="header2">
-                <div>Pages /<span class="fade">Table</span></div>
-                <h4>Table</h4>
-            </div>
-            <div class="pry-cont pry3" id="header3">
-                <div>Pages /<span class="fade">Billing</span></div>
-                <h4>Billing</h4>
-            </div>
-            <div class="pry-cont pry4" id="header4">
-                <div>Pages /<span class="fade">Profile</span></div>
-                <h4>Profile</h4>
-            </div>
-            <div class="pry-cont pry5" id="header5">
-                <div>Pages /<span class="fade">Notification</span></div>
-                <h4>Notification</h4>
-            </div>
-            <div>
-                <ul>
-                    <li class="side">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </li>
-                    <li class="input"><input type="text" placeholder="Type"></li>
-                    <li class="input-in"><input type="text" placeholder="Type here..."></li>
-                    <li class="online">Online builder</li>
-                    <li class="star">
-                        <span><i class="fa-regular fa-star"></i>Star</span> 
-                        <span>10,669</span>
-                    </li>
-                    <li class="open"><i class="fa-solid fa-bars"></i></li>
-                    <li class="open-config"><i class="fa-solid fa-gear"></i></li>
-                    <li>
-                        <ul>
-                            <li data-page="data5" data-head="header5" class="gator">
-                                <a href="#"><i class="fa-regular fa-bell"></i></a>
-                            </li>
-                            <li data-page="data4" data-head="header4" class="gator">
-                                <a href="#"><i class="fa-regular fa-user"></i></a>
-                            </li>
-                            <li class="sign"><a href="signIn.html">Sign in</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="pry-cont pry1" id="header1">
+          <div>Pages /<span class="fade">Dashboard</span></div>
+          <h4>Dashboard</h4>
         </div>
+        <div class="pry-cont pry2" id="header2">
+          <div>Pages /<span class="fade">Table</span></div>
+          <h4>Table</h4>
+        </div>
+        <div class="pry-cont pry3" id="header3">
+          <div>Pages /<span class="fade">Billing</span></div>
+          <h4>Billing</h4>
+        </div>
+        <div class="pry-cont pry4" id="header4">
+          <div>Pages /<span class="fade">Profile</span></div>
+          <h4>Profile</h4>
+        </div>
+        <div class="pry-cont pry5" id="header5">
+          <div>Pages /<span class="fade">Notification</span></div>
+          <h4>Notification</h4>
+        </div>
+        <div>
+          <ul>
+            <li class="side">
+              <span></span>
+              <span></span>
+              <span></span>
+            </li>
+            <li class="input"><input type="text" placeholder="Type" /></li>
+            <li class="input-in">
+              <input type="text" placeholder="Type here..." />
+            </li>
+            <li class="online">Online builder</li>
+            <li class="star">
+              <span><i class="fa-regular fa-star"></i>Star</span>
+              <span>10,669</span>
+            </li>
+            <li class="open"><i class="fa-solid fa-bars"></i></li>
+            <li class="open-config"><i class="fa-solid fa-gear"></i></li>
+            <li>
+              <ul>
+                <li data-page="data5" data-head="header5" class="gator">
+                  <a href="#"><i class="fa-regular fa-bell"></i></a>
+                </li>
+                <li data-page="data4" data-head="header4" class="gator">
+                  <a href="#"><i class="fa-regular fa-user"></i></a>
+                </li>
+                <li class="sign"><a href="signIn.html">Sign in</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <section id="data1" class="data">
-        <section id="first-section">
-            <div class="container">
-                <div class="card">
-                    <div class="img-cont img-cont1">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <p class="pe">Today's Money</p>
-                    <h3>$53k</h3>
-                    <div class="line"></div>
-                    <p><span>+55%</span>than last week</p>
-                </div>
-                <div class="card">
-                    <div class="img-cont img-cont2">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <p class="pe">Today's Users</p>
-                    <h3>2,300</h3>
-                    <div class="line"></div>
-                    <p><span>+3%</span>than last month</p>
-                </div>
-                <div class="card">
-                    <div class="img-cont img-cont3">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <p class="pe">New Clients</p>
-                    <h3>3,462</h3>
-                    <div class="line"></div>
-                    <p><span class="low-rate">-2%</span>than yesterday</p>
-                </div>
-                <div class="card">
-                    <div class="img-cont img-cont4">
-                        <i class="fa-solid fa-couch"></i>
-                    </div>
-                    <p class="pe">sales</p>
-                    <h3>$103,430</h3>
-                    <div class="line"></div>
-                    <p><span>+5%</span>than yesterday</p>
-                </div>
+      <section id="first-section">
+        <div class="container">
+          <div class="card">
+            <div class="img-cont img-cont1">
+              <i class="fa-solid fa-couch"></i>
             </div>
-        </section>
-    
-        <section id="second-section">
-            <div class="container">
-                <div class="card">
-                    <div class="img-cont img-cont1">
-                        <div class="graph">
-                            <span>60</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>40</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>20</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>&nbsp;&nbsp;0</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="days">
-                            <span>M</span>
-                            <span>T</span>
-                            <span>W</span>
-                            <span>T</span>
-                            <span>F</span>
-                            <span>S</span>
-                            <span>S</span>
-                        </div>
-                    </div>
-                    <h4>Website Views</h4>
-                    <p>Last Campaign Performance</p>
-                    <div class="line"></div>
-                    <p> <i class="fa-regular fa-clock"></i>campaign sent 2 ago</p>
-                </div>
-                <div class="card">
-                    <div class="img-cont img-cont2">
-                        <div class="graph">
-                            <span>600</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>400</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>200</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>&nbsp;&nbsp;&nbsp;&nbsp;0</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="days">
-                            <span>Apr</span>
-                            <span>May</span>
-                            <span>Jun</span>
-                            <span>Jul</span>
-                            <span>Aug</span>
-                            <span>Sep</span>
-                            <span>Oct</span>
-                            <span>Nov</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-                    <h4>Daily Sales</h4>
-                    <p>(+15%) increase in today sales</p>
-                    <div class="line"></div>
-                    <p> <i class="fa-regular fa-clock"></i>updated 4 min ago</p>
-                </div>
-                <div class="card">
-                    <div class="img-cont img-cont3">
-                        <div class="graph">
-                            <span>600</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>400</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>200</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="graph">
-                            <span>&nbsp;&nbsp;&nbsp;&nbsp;0</span>
-                            <div class="graph-line"></div>
-                        </div>
-                        <div class="days">
-                            <span>Apr</span>
-                            <span>May</span>
-                            <span>Jun</span>
-                            <span>Jul</span>
-                            <span>Aug</span>
-                            <span>Sep</span>
-                            <span>Oct</span>
-                            <span>Nov</span>
-                            <span>Dec</span>
-                        </div>
-                    </div>
-                    <h4>Completed Tasks</h4>
-                    <p>Last Campaign Perfomance</p>
-                    <div class="line"></div>
-                    <p> <i class="fa-regular fa-clock"></i>just updated</p>
-                </div>
+            <p class="pe">Today's Money</p>
+            <h3>$53k</h3>
+            <div class="line"></div>
+            <p><span>+55%</span>than last week</p>
+          </div>
+          <div class="card">
+            <div class="img-cont img-cont2">
+              <i class="fa-solid fa-user"></i>
             </div>
-        </section>
-    
-        <section id="third-section">
-            <aside class="container1">
-                <div class="projects">
-                    <div>
-                        <h4>Projects</h4>
-                        <p><i class="fa-sharp fa-solid fa-check"></i><span>30 done </span>this month</p>
-                    </div>
-                    <div class="action">
-                        <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
-                        <ul>
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="table table-header">
-                    <span class="companies">COMPANIES</span>
-                    <span class="members">MEMBERS</span>
-                    <span class="budget">BUDGET</span>
-                    <span class="completion">COMPLETION</span>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-xd.svg" alt="logo">
-                        <h4>Material XD Version</h4>
-                    </div>
-                    <div class="members">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                    </div>
-                    <p class="budget">$14,000</p>
-                    <div class="completion">
-                        <p>60%</p>
-                        <div class="progress">
-                            <div style="width: 60%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-atlassian.svg" alt="logo">
-                        <h4>Add Progress Track</h4>
-                    </div>
-                    <div class="members">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                    </div>
-                    <p class="budget">$3,000</p>
-                    <div class="completion">
-                        <p>10%</p>
-                        <div class="progress">
-                            <div style="width: 10%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-slack.svg" alt="logo">
-                        <h4>Fix Platform Errors</h4>
-                    </div>
-                    <div class="members">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                    </div>
-                    <p class="budget">Not set</p>
-                    <div class="completion">
-                        <p>100%</p>
-                        <div class="progress">
-                            <div class="full" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-spotify.svg" alt="logo">
-                        <h4>Launch our Mobile App</h4>
-                    </div>
-                    <div class="members">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                    </div>
-                    <p class="budget">$20,500</p>
-                    <div class="completion">
-                        <p>100%</p>
-                        <div class="progress">
-                            <div class="full" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-jira.svg" alt="logo">
-                        <h4>Add the New Pricing Page</h4>
-                    </div>
-                    <div class="members">
-                        <img src="images/img-1.jpg" alt="member">
-                    </div>
-                    <p class="budget">$500</p>
-                    <div class="completion">
-                        <p>25%</p>
-                        <div class="progress">
-                            <div style="width: 25%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-invision.svg" alt="logo">
-                        <h4>Redesign New Online Shop</h4>
-                    </div>
-                    <div class="members">
-                        <img src="images/img-1.jpg" alt="member">
-                        <img src="images/img-1.jpg" alt="member">
-                    </div>
-                    <p class="budget">$2000</p>
-                    <div class="completion">
-                        <p>40%</p>
-                        <div class="progress">
-                            <div style="width: 40%"></div>
-                        </div>
-                    </div>
-                </div>
-            </aside>
-    
-            <aside class="container2">
-                <div class="container-header">
-                    <h4>Orders overview</h4>
-                    <p><i class="fa-solid fa-arrow-up"></i> <span>24% </span>this month</p>
-                </div>
-                <div class="lists">
-                    <i class="fa-solid fa-bell"></i>
-                    <div class="line"></div>
-                    <i class="fa-solid fa-code"></i>
-                    <div class="line"></div>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <div class="line"></div>
-                    <i class="fa-regular fa-credit-card"></i>
-                    <div class="line"></div>
-                    <i class="fa-solid fa-key"></i>
-                    <div class="line"></div>
-                    <i class="fa-solid fa-vr-cardboard"></i>
-                    <div class="line last-child"></div>
-                </div>
-                <div class="price">
-                    <h4>$2400, Design changes</h4>
-                    <p>22 DEC 7:20 PM</p>
-                    <h4>New order #1832412</h4>
-                    <p>21 DEC 11 PM</p>
-                    <h4>Server payments for April</h4>
-                    <p>22 DEC 9:34 PM</p>
-                    <h4>New card added for order #4395133</h4>
-                    <p>20 DEC 2:20 AM</p>
-                    <h4>Unlock packages for development</h4>
-                    <p>18 DEC 4:54 AM</p>
-                    <h4>New order #9583120</h4>
-                    <p>17 DEC</p>
-                </div>
-                <div class="clear"></div>
-            </aside>
-        </section>
+            <p class="pe">Today's Users</p>
+            <h3>2,300</h3>
+            <div class="line"></div>
+            <p><span>+3%</span>than last month</p>
+          </div>
+          <div class="card">
+            <div class="img-cont img-cont3">
+              <i class="fa-solid fa-user"></i>
+            </div>
+            <p class="pe">New Clients</p>
+            <h3>3,462</h3>
+            <div class="line"></div>
+            <p><span class="low-rate">-2%</span>than yesterday</p>
+          </div>
+          <div class="card">
+            <div class="img-cont img-cont4">
+              <i class="fa-solid fa-couch"></i>
+            </div>
+            <p class="pe">sales</p>
+            <h3>$103,430</h3>
+            <div class="line"></div>
+            <p><span>+5%</span>than yesterday</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="second-section">
+        <div class="container">
+          <div class="card">
+            <div class="img-cont img-cont1">
+              <div class="graph">
+                <span>60</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>40</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>20</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>&nbsp;&nbsp;0</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="days">
+                <span>M</span>
+                <span>T</span>
+                <span>W</span>
+                <span>T</span>
+                <span>F</span>
+                <span>S</span>
+                <span>S</span>
+              </div>
+            </div>
+            <h4>Website Views</h4>
+            <p>Last Campaign Performance</p>
+            <div class="line"></div>
+            <p><i class="fa-regular fa-clock"></i>campaign sent 2 ago</p>
+          </div>
+          <div class="card">
+            <div class="img-cont img-cont2">
+              <div class="graph">
+                <span>600</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>400</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>200</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="days">
+                <span>Apr</span>
+                <span>May</span>
+                <span>Jun</span>
+                <span>Jul</span>
+                <span>Aug</span>
+                <span>Sep</span>
+                <span>Oct</span>
+                <span>Nov</span>
+                <span>Dec</span>
+              </div>
+            </div>
+            <h4>Daily Sales</h4>
+            <p>(+15%) increase in today sales</p>
+            <div class="line"></div>
+            <p><i class="fa-regular fa-clock"></i>updated 4 min ago</p>
+          </div>
+          <div class="card">
+            <div class="img-cont img-cont3">
+              <div class="graph">
+                <span>600</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>400</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>200</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="graph">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;0</span>
+                <div class="graph-line"></div>
+              </div>
+              <div class="days">
+                <span>Apr</span>
+                <span>May</span>
+                <span>Jun</span>
+                <span>Jul</span>
+                <span>Aug</span>
+                <span>Sep</span>
+                <span>Oct</span>
+                <span>Nov</span>
+                <span>Dec</span>
+              </div>
+            </div>
+            <h4>Completed Tasks</h4>
+            <p>Last Campaign Perfomance</p>
+            <div class="line"></div>
+            <p><i class="fa-regular fa-clock"></i>just updated</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="third-section">
+        <aside class="container1">
+          <div class="projects">
+            <div>
+              <h4>Projects</h4>
+              <p>
+                <i class="fa-sharp fa-solid fa-check"></i
+                ><span>30 done </span>this month
+              </p>
+            </div>
+            <div class="action">
+              <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
+              <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="table table-header">
+            <span class="companies">COMPANIES</span>
+            <span class="members">MEMBERS</span>
+            <span class="budget">BUDGET</span>
+            <span class="completion">COMPLETION</span>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-xd.svg" alt="logo" />
+              <h4>Material XD Version</h4>
+            </div>
+            <div class="members">
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+            </div>
+            <p class="budget">$14,000</p>
+            <div class="completion">
+              <p>60%</p>
+              <div class="progress">
+                <div style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-atlassian.svg" alt="logo" />
+              <h4>Add Progress Track</h4>
+            </div>
+            <div class="members">
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+            </div>
+            <p class="budget">$3,000</p>
+            <div class="completion">
+              <p>10%</p>
+              <div class="progress">
+                <div style="width: 10%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-slack.svg" alt="logo" />
+              <h4>Fix Platform Errors</h4>
+            </div>
+            <div class="members">
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+            </div>
+            <p class="budget">Not set</p>
+            <div class="completion">
+              <p>100%</p>
+              <div class="progress">
+                <div class="full" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-spotify.svg" alt="logo" />
+              <h4>Launch our Mobile App</h4>
+            </div>
+            <div class="members">
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+            </div>
+            <p class="budget">$20,500</p>
+            <div class="completion">
+              <p>100%</p>
+              <div class="progress">
+                <div class="full" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-jira.svg" alt="logo" />
+              <h4>Add the New Pricing Page</h4>
+            </div>
+            <div class="members">
+              <img src="images/img-1.jpg" alt="member" />
+            </div>
+            <p class="budget">$500</p>
+            <div class="completion">
+              <p>25%</p>
+              <div class="progress">
+                <div style="width: 25%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-invision.svg" alt="logo" />
+              <h4>Redesign New Online Shop</h4>
+            </div>
+            <div class="members">
+              <img src="images/img-1.jpg" alt="member" />
+              <img src="images/img-1.jpg" alt="member" />
+            </div>
+            <p class="budget">$2000</p>
+            <div class="completion">
+              <p>40%</p>
+              <div class="progress">
+                <div style="width: 40%"></div>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <aside class="container2">
+          <div class="container-header">
+            <h4>Orders overview</h4>
+            <p>
+              <i class="fa-solid fa-arrow-up"></i> <span>24% </span>this month
+            </p>
+          </div>
+          <div class="lists">
+            <i class="fa-solid fa-bell"></i>
+            <div class="line"></div>
+            <i class="fa-solid fa-code"></i>
+            <div class="line"></div>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="line"></div>
+            <i class="fa-regular fa-credit-card"></i>
+            <div class="line"></div>
+            <i class="fa-solid fa-key"></i>
+            <div class="line"></div>
+            <i class="fa-solid fa-vr-cardboard"></i>
+            <div class="line last-child"></div>
+          </div>
+          <div class="price">
+            <h4>$2400, Design changes</h4>
+            <p>22 DEC 7:20 PM</p>
+            <h4>New order #1832412</h4>
+            <p>21 DEC 11 PM</p>
+            <h4>Server payments for April</h4>
+            <p>22 DEC 9:34 PM</p>
+            <h4>New card added for order #4395133</h4>
+            <p>20 DEC 2:20 AM</p>
+            <h4>Unlock packages for development</h4>
+            <p>18 DEC 4:54 AM</p>
+            <h4>New order #9583120</h4>
+            <p>17 DEC</p>
+          </div>
+          <div class="clear"></div>
+        </aside>
+      </section>
     </section>
 
     <section id="data2" class="data">
-        <section id="table-section">
-            <div class="container">
-                <h4 class="header">Authors Table</h4>
-                <div class="scroll">
-                    <div class="table table-header">
-                        <h4 class="author">AUTHOR</h4>
-                        <h4 class="function">FUNCTION</h4>
-                        <h4 class="status">STATUS</h4>
-                        <h4 class="employed">EMPLOYED</h4>
-                    </div>
-                    <div class="table">
-                        <div class="author">
-                            <img src="./images/team-1.jpg" alt="author">
-                            <div class="img-name">
-                                <h3>John Michael</h3>
-                                <p>john@creative-tim.com</p>
-                            </div>
-                        </div>
-                        <div class="function">
-                            <h4>Manager</h4>
-                            <p>Organization</p>
-                        </div>
-                        <div class="status">
-                            <span>ONLINE</span>
-                        </div>
-                        <div class="employed">
-                            <div class="edit">
-                                <span>23/04/18</span>
-                                <span>Edit</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="table">
-                        <div class="author">
-                            <img src="./images/team-1.jpg" alt="author">
-                            <div class="img-name">
-                                <h3>John Michael</h3>
-                                <p>john@creative-tim.com</p>
-                            </div>
-                        </div>
-                        <div class="function">
-                            <h4>Manager</h4>
-                            <p>Organization</p>
-                        </div>
-                        <div class="status">
-                            <span class="off">OFFLINE</span>
-                        </div>
-                        <div class="employed">
-                            <div class="edit">
-                                <span>23/04/18</span>
-                                <span>Edit</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="table">
-                        <div class="author">
-                            <img src="./images/team-1.jpg" alt="author">
-                            <div class="img-name">
-                                <h3>John Michael</h3>
-                                <p>john@creative-tim.com</p>
-                            </div>
-                        </div>
-                        <div class="function">
-                            <h4>Manager</h4>
-                            <p>Organization</p>
-                        </div>
-                        <div class="status">
-                            <span>ONLINE</span>
-                        </div>
-                        <div class="employed">
-                            <div class="edit">
-                                <span>23/04/18</span>
-                                <span>Edit</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="table">
-                        <div class="author">
-                            <img src="./images/team-1.jpg" alt="author">
-                            <div class="img-name">
-                                <h3>John Michael</h3>
-                                <p>john@creative-tim.com</p>
-                            </div>
-                        </div>
-                        <div class="function">
-                            <h4>Manager</h4>
-                            <p>Organization</p>
-                        </div>
-                        <div class="status">
-                            <span>ONLINE</span>
-                        </div>
-                        <div class="employed">
-                            <div class="edit">
-                                <span>23/04/18</span>
-                                <span>Edit</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="table">
-                        <div class="author">
-                            <img src="./images/team-1.jpg" alt="author">
-                            <div class="img-name">
-                                <h3>John Michael</h3>
-                                <p>john@creative-tim.com</p>
-                            </div>
-                        </div>
-                        <div class="function">
-                            <h4>Manager</h4>
-                            <p>Organization</p>
-                        </div>
-                        <div class="status">
-                            <span class="off">OFFLINE</span>
-                        </div>
-                        <div class="employed">
-                            <div class="edit">
-                                <span>23/04/18</span>
-                                <span>Edit</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="table">
-                        <div class="author">
-                            <img src="./images/team-1.jpg" alt="author">
-                            <div class="img-name">
-                                <h3>John Michael</h3>
-                                <p>john@creative-tim.com</p>
-                            </div>
-                        </div>
-                        <div class="function">
-                            <h4>Manager</h4>
-                            <p>Organization</p>
-                        </div>
-                        <div class="status">
-                            <span class="off">OFFLINE</span>
-                        </div>
-                        <div class="employed">
-                            <div class="edit">
-                                <span>23/04/18</span>
-                                <span>Edit</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="table">
-                        <div class="author">
-                            <img src="./images/team-1.jpg" alt="author">
-                            <div class="img-name">
-                                <h3>John Michael</h3>
-                                <p>john@creative-tim.com</p>
-                            </div>
-                        </div>
-                        <div class="function">
-                            <h4>Manager</h4>
-                            <p>Organization</p>
-                        </div>
-                        <div class="status">
-                            <span>ONLINE</span>
-                        </div>
-                        <div class="employed">
-                            <div class="edit">
-                                <span>23/04/18</span>
-                                <span>Edit</span>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+      <section id="table-section">
+        <div class="container">
+          <h4 class="header">Authors Table</h4>
+          <div class="scroll">
+            <div class="table table-header">
+              <h4 class="author">AUTHOR</h4>
+              <h4 class="function">FUNCTION</h4>
+              <h4 class="status">STATUS</h4>
+              <h4 class="employed">EMPLOYED</h4>
             </div>
-        </section>
-    
-    
-        <section id="table-section2">
-            <div class="container">
-                <h4 class="header">Project Table</h4>
-                <div class="table table-header">
-                    <h4 class="companies">PROJECT</h4>
-                    <h4 class="members">BUDGET</h4>
-                    <h4 class="budget">STATUS</h4>
-                    <h4 class="completion">COMPLETION</h4>
+            <div class="table">
+              <div class="author">
+                <img src="./images/team-1.jpg" alt="author" />
+                <div class="img-name">
+                  <h3>John Michael</h3>
+                  <p>john@creative-tim.com</p>
                 </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-asana.svg" alt="logo">
-                        <h4>Asana</h4>
-                    </div>
-                    <div class="members">
-                       <span>$2,500</span>
-                    </div>
-                    <p class="budget">working</p>
-                    <div class="completion">
-                        <div class="comp">                   
-                            <p>60%</p>
-                            <div class="progress">
-                                <div style="width: 60%"></div>
-                            </div>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
-                    </div>
+              </div>
+              <div class="function">
+                <h4>Manager</h4>
+                <p>Organization</p>
+              </div>
+              <div class="status">
+                <span>ONLINE</span>
+              </div>
+              <div class="employed">
+                <div class="edit">
+                  <span>23/04/18</span>
+                  <span>Edit</span>
                 </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/github.svg" alt="logo">
-                        <h4>Github</h4>
-                    </div>
-                    <div class="members">
-                       <span>$2,500</span>
-                    </div>
-                    <p class="budget">working</p>
-                    <div class="completion">
-                        <div class="comp">                   
-                            <p>100%</p>
-                            <div class="progress">
-                                <div style="width: 100%" class="full"></div>
-                            </div>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-atlassian.svg" alt="logo">
-                        <h4>Atlassian</h4>
-                    </div>
-                    <div class="members">
-                       <span>$5,000</span>
-                    </div>
-                    <p class="budget">done</p>
-                    <div class="completion">
-                        <div class="comp">                   
-                            <p>30%</p>
-                            <div class="progress">
-                                <div style="width: 30%" class="red"></div>
-                            </div>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/bootstrap.svg" alt="logo">
-                        <h4>Bootstrap</h4>
-                    </div>
-                    <div class="members">
-                       <span>$14,000</span>
-                    </div>
-                    <p class="budget">working</p>
-                    <div class="completion">
-                        <div class="comp">                   
-                            <p>80%</p>
-                            <div class="progress">
-                                <div style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/logo-slack.svg" alt="logo">
-                        <h4>Slack</h4>
-                    </div>
-                    <div class="members">
-                       <span>$1,000</span>
-                    </div>
-                    <p class="budget">canceled</p>
-                    <div class="completion">
-                        <div class="comp">                   
-                            <p>0%</p>
-                            <div class="progress">
-                                <div style="width: 0%"></div>
-                            </div>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
-                    </div>
-                </div>
-                <div class="table">
-                    <div class="companies">
-                        <img src="images/small-logos/devto.svg" alt="logo">
-                        <h4>Devto</h4>
-                    </div>
-                    <div class="members">
-                       <span>$2,300</span>
-                    </div>
-                    <p class="budget">done</p>
-                    <div class="completion">
-                        <div class="comp">                   
-                            <p>100%</p>
-                            <div class="progress">
-                                <div style="width: 100%" class="full"></div>
-                            </div>
-                        </div>
-                        <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+            <div class="table">
+              <div class="author">
+                <img src="./images/team-1.jpg" alt="author" />
+                <div class="img-name">
+                  <h3>John Michael</h3>
+                  <p>john@creative-tim.com</p>
+                </div>
+              </div>
+              <div class="function">
+                <h4>Manager</h4>
+                <p>Organization</p>
+              </div>
+              <div class="status">
+                <span class="off">OFFLINE</span>
+              </div>
+              <div class="employed">
+                <div class="edit">
+                  <span>23/04/18</span>
+                  <span>Edit</span>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <div class="author">
+                <img src="./images/team-1.jpg" alt="author" />
+                <div class="img-name">
+                  <h3>John Michael</h3>
+                  <p>john@creative-tim.com</p>
+                </div>
+              </div>
+              <div class="function">
+                <h4>Manager</h4>
+                <p>Organization</p>
+              </div>
+              <div class="status">
+                <span>ONLINE</span>
+              </div>
+              <div class="employed">
+                <div class="edit">
+                  <span>23/04/18</span>
+                  <span>Edit</span>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <div class="author">
+                <img src="./images/team-1.jpg" alt="author" />
+                <div class="img-name">
+                  <h3>John Michael</h3>
+                  <p>john@creative-tim.com</p>
+                </div>
+              </div>
+              <div class="function">
+                <h4>Manager</h4>
+                <p>Organization</p>
+              </div>
+              <div class="status">
+                <span>ONLINE</span>
+              </div>
+              <div class="employed">
+                <div class="edit">
+                  <span>23/04/18</span>
+                  <span>Edit</span>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <div class="author">
+                <img src="./images/team-1.jpg" alt="author" />
+                <div class="img-name">
+                  <h3>John Michael</h3>
+                  <p>john@creative-tim.com</p>
+                </div>
+              </div>
+              <div class="function">
+                <h4>Manager</h4>
+                <p>Organization</p>
+              </div>
+              <div class="status">
+                <span class="off">OFFLINE</span>
+              </div>
+              <div class="employed">
+                <div class="edit">
+                  <span>23/04/18</span>
+                  <span>Edit</span>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <div class="author">
+                <img src="./images/team-1.jpg" alt="author" />
+                <div class="img-name">
+                  <h3>John Michael</h3>
+                  <p>john@creative-tim.com</p>
+                </div>
+              </div>
+              <div class="function">
+                <h4>Manager</h4>
+                <p>Organization</p>
+              </div>
+              <div class="status">
+                <span class="off">OFFLINE</span>
+              </div>
+              <div class="employed">
+                <div class="edit">
+                  <span>23/04/18</span>
+                  <span>Edit</span>
+                </div>
+              </div>
+            </div>
+            <div class="table">
+              <div class="author">
+                <img src="./images/team-1.jpg" alt="author" />
+                <div class="img-name">
+                  <h3>John Michael</h3>
+                  <p>john@creative-tim.com</p>
+                </div>
+              </div>
+              <div class="function">
+                <h4>Manager</h4>
+                <p>Organization</p>
+              </div>
+              <div class="status">
+                <span>ONLINE</span>
+              </div>
+              <div class="employed">
+                <div class="edit">
+                  <span>23/04/18</span>
+                  <span>Edit</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="table-section2">
+        <div class="container">
+          <h4 class="header">Project Table</h4>
+          <div class="table table-header">
+            <h4 class="companies">PROJECT</h4>
+            <h4 class="members">BUDGET</h4>
+            <h4 class="budget">STATUS</h4>
+            <h4 class="completion">COMPLETION</h4>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-asana.svg" alt="logo" />
+              <h4>Asana</h4>
+            </div>
+            <div class="members">
+              <span>$2,500</span>
+            </div>
+            <p class="budget">working</p>
+            <div class="completion">
+              <div class="comp">
+                <p>60%</p>
+                <div class="progress">
+                  <div style="width: 60%"></div>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/github.svg" alt="logo" />
+              <h4>Github</h4>
+            </div>
+            <div class="members">
+              <span>$2,500</span>
+            </div>
+            <p class="budget">working</p>
+            <div class="completion">
+              <div class="comp">
+                <p>100%</p>
+                <div class="progress">
+                  <div style="width: 100%" class="full"></div>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-atlassian.svg" alt="logo" />
+              <h4>Atlassian</h4>
+            </div>
+            <div class="members">
+              <span>$5,000</span>
+            </div>
+            <p class="budget">done</p>
+            <div class="completion">
+              <div class="comp">
+                <p>30%</p>
+                <div class="progress">
+                  <div style="width: 30%" class="red"></div>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/bootstrap.svg" alt="logo" />
+              <h4>Bootstrap</h4>
+            </div>
+            <div class="members">
+              <span>$14,000</span>
+            </div>
+            <p class="budget">working</p>
+            <div class="completion">
+              <div class="comp">
+                <p>80%</p>
+                <div class="progress">
+                  <div style="width: 80%"></div>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/logo-slack.svg" alt="logo" />
+              <h4>Slack</h4>
+            </div>
+            <div class="members">
+              <span>$1,000</span>
+            </div>
+            <p class="budget">canceled</p>
+            <div class="completion">
+              <div class="comp">
+                <p>0%</p>
+                <div class="progress">
+                  <div style="width: 0%"></div>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
+            </div>
+          </div>
+          <div class="table">
+            <div class="companies">
+              <img src="images/small-logos/devto.svg" alt="logo" />
+              <h4>Devto</h4>
+            </div>
+            <div class="members">
+              <span>$2,300</span>
+            </div>
+            <p class="budget">done</p>
+            <div class="completion">
+              <div class="comp">
+                <p>100%</p>
+                <div class="progress">
+                  <div style="width: 100%" class="full"></div>
+                </div>
+              </div>
+              <i class="fa-solid fa-ellipsis-vertical action-btn"></i>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section id="data3" class="data">
-        <section id="billing-section">
-            <div class="container">
-                <div class="atm-card">
-                    <i class="fa-solid fa-wifi"></i>
-                    <p class="number">4562 &nbsp&nbsp 1122 &nbsp&nbsp 4594 &nbsp&nbsp 7852</p>
-                    <div class="mast">
-                        <div class="master">
-                            <div class="holder">
-                                <p>Card Holder</p>
-                                <h4>Jack Peterson</h4>
-                            </div>
-                            <div class="holder">
-                                <p>Expires</p>
-                                <h4>11/22</h4>
-                            </div>
-                        </div>
-                        <img src="./images/small-logos/mastercard.png" alt="master card">
-                    </div>
+      <section id="billing-section">
+        <div class="container">
+          <div class="atm-card">
+            <i class="fa-solid fa-wifi"></i>
+            <p class="number">
+              4562 &nbsp&nbsp 1122 &nbsp&nbsp 4594 &nbsp&nbsp 7852
+            </p>
+            <div class="mast">
+              <div class="master">
+                <div class="holder">
+                  <p>Card Holder</p>
+                  <h4>Jack Peterson</h4>
                 </div>
-                <div class="white-card wit">
-                    <i class="fa-solid fa-building-columns"></i>
-                    <h4>Salary</h4>
-                    <p>Belong Interactive</p>
-                    <div class="line"></div>
-                    <h3>+$2000</h3>
+                <div class="holder">
+                  <p>Expires</p>
+                  <h4>11/22</h4>
                 </div>
-                <div class="white-card wit2">
-                    <i class="fa-solid fa-wallet"></i>
-                    <h4>Paypal</h4>
-                    <p>Free Payment</p>
-                    <div class="line"></div>
-                    <h3>+$455.00</h3>
-                </div>
-                <div class="payment-method">
-                    <div class="method">
-                        <h4>Payment Method</h4>
-                        <span>+ ADD NEW CARD</span>
-                    </div>
-                    <div class="mast">
-                        <div class="master">
-                            <div class="ash">
-                                <img src="./images/small-logos/mastercard.png" alt="master card">
-                                <span>**** &nbsp&nbsp **** &nbsp&nbsp **** &nbsp&nbsp 7852</span>
-                            </div>
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                        <div class="master">
-                            <div class="ash">
-                                <img src="./images/small-logos/visa.png" alt="visa card">
-                                <span>**** &nbsp&nbsp **** &nbsp&nbsp **** &nbsp&nbsp 7852</span>
-                            </div>
-                            <i class="fa-solid fa-pen"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="invoices">
-                    <div class="header">
-                        <h4>Invoices</h4>
-                        <a href="#">VIEW ALL</a>
-                    </div>
-                    <div class="body">
-                        <div class="march">
-                            <h4>March, 01, 2020</h4>
-                            <p>#MS-415246</p>
-                        </div>
-                        <div class="dolls">
-                            <span>$180</span>
-                            <div class="pdf">
-                                <i class="fa-solid fa-file"></i>
-                                <span>PDF</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="body">
-                        <div class="march">
-                            <h4>February, 10, 2021</h4>
-                            <p>#RV-126749</p>
-                        </div>
-                        <div class="dolls">
-                            <span>$250</span>
-                            <div class="pdf">
-                                <i class="fa-solid fa-file"></i>
-                                <span>PDF</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="body">
-                        <div class="march">
-                            <h4>April, 05, 2020</h4>
-                            <p>#FB-212562</p>
-                        </div>
-                        <div class="dolls">
-                            <span>$560</span>
-                            <div class="pdf">
-                                <i class="fa-solid fa-file"></i>
-                                <span>PDF</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="body">
-                        <div class="march">
-                            <h4>sjune, 25, 2019</h4>
-                            <p>#QW-10.578</p>
-                        </div>
-                        <div class="dolls">
-                            <span>$120</span>
-                            <div class="pdf">
-                                <i class="fa-solid fa-file"></i>
-                                <span>PDF</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="body">
-                        <div class="march">
-                            <h4>March, 01, 2019</h4>
-                            <p>#AR-803481</p>
-                        </div>
-                        <div class="dolls">
-                            <span>$300</span>
-                            <div class="pdf">
-                                <i class="fa-solid fa-file"></i>
-                                <span>PDF</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <img
+                src="./images/small-logos/mastercard.png"
+                alt="master card"
+              />
             </div>
-        </section>
-        <section id="billing-information">
-            <div class="container">
-                <div class="billing">
-                    <h4>Billing Information</h4>
-                    <div class="oliv">
-                        <div class="header">
-                            <h4>Oliver Liam</h4>
-                            <div class="del">
-                                <span><i class="fa-solid fa-trash"></i>DELETE</span>
-                                <span><i class="fa-solid fa-pen"></i>EDIT</span>
-                            </div>
-                        </div>
-                        <p>Company Name: <span>Viking Burrito</span></p>
-                        <p>Email Address: <span>iheme.ifeanyi@yahoo.com</span></p>
-                        <p>VAT Number: <span>FRB123456</span></p>
-                    </div>
-                    <div class="oliv">
-                        <div class="header">
-                            <h4>Lucas Harper</h4>
-                            <div class="del">
-                                <span><i class="fa-solid fa-trash"></i>DELETE</span>
-                                <span><i class="fa-solid fa-pen"></i>EDIT</span>
-                            </div>
-                        </div>
-                        <p>Company Name: <span>Stone Tech Aone</span></p>
-                        <p>Email Address: <span>iheme.ifeanyi@yahoo.com</span></p>
-                        <p>VAT Number: <span>FRB123456</span></p>
-                    </div>
-                    <div class="oliv">
-                        <div class="header">
-                            <h4>Ethan James</h4>
-                            <div class="del">
-                                <span><i class="fa-solid fa-trash"></i>DELETE</span>
-                                <span><i class="fa-solid fa-pen"></i>EDIT</span>
-                            </div>
-                        </div>
-                        <p>Company Name: <span>Fiber Notion</span></p>
-                        <p>Email Address: <span>iheme.ifeanyi@yahoo.com</span></p>
-                        <p>VAT Number: <span>FRB123456</span></p>
-                    </div>
-                </div>
-                <div class="transaction">
-                    <div class="header">
-                        <h4>Your Transaction's</h4>
-                        <span><i class="fa-solid fa-calendar-days"></i> 23 - 30 March 2020</span>
-                    </div>
-                    <div class="newest">
-                        <h5>NEWEST</h5>
-                        <div class="net">
-                            <div class="app">
-                                <i class="fa-solid fa-angle-down"></i>
-                                <div class="mar">
-                                    <h4>Netflix</h4>
-                                    <p>27 March 2020, at 12:30 PM</p>
-                                </div>
-                            </div>
-                            <span class="spant">-$ 2,500</span>
-                        </div>
-                        <div class="net">
-                            <div class="app">
-                                <i class="fa-solid fa-angle-up"></i>
-                                <div class="mar">
-                                    <h4>Apple</h4>
-                                    <p>27 March 2020, at 4:30 PM</p>
-                                </div>
-                            </div>
-                            <span>-$ 2,000</span>
-                        </div>
-                    </div>
-                    <div class="newest">
-                        <h5>YESTERDAY</h5>
-                        <div class="net">
-                            <div class="app">
-                                <i class="fa-solid fa-angle-up"></i>
-                                <div class="mar">
-                                    <h4>Stripe</h4>
-                                    <p>26 March 2020, at 4:30 PM</p>
-                                </div>
-                            </div>
-                            <span>-$ 750</span>
-                        </div>
-                        <div class="net">
-                            <div class="app">
-                                <i class="fa-solid fa-angle-up"></i>
-                                <div class="mar">
-                                    <h4>HubSpot</h4>
-                                    <p>26 March 2020, at 12:30 PM</p>
-                                </div>
-                            </div>
-                            <span>-$ 1,000</span>
-                        </div>
-                        <div class="net">
-                            <div class="app">
-                                <i class="fa-solid fa-angle-up"></i>
-                                <div class="mar">
-                                    <h4>Creative Tim</h4>
-                                    <p>26 March 2020, at 8:30 AM</p>
-                                </div>
-                            </div>
-                            <span>-$ 2,500</span>
-                        </div>
-                        <div class="net">
-                            <div class="app">
-                                <span class="excl">&#33;</span>
-                                <div class="mar">
-                                    <h4>Webflow</h4>
-                                    <p>26 March 2020, at 5:00 AM</p>
-                                </div>
-                            </div>
-                            <span class="spa">Pending</span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="white-card wit">
+            <i class="fa-solid fa-building-columns"></i>
+            <h4>Salary</h4>
+            <p>Belong Interactive</p>
+            <div class="line"></div>
+            <h3>+$2000</h3>
+          </div>
+          <div class="white-card wit2">
+            <i class="fa-solid fa-wallet"></i>
+            <h4>Paypal</h4>
+            <p>Free Payment</p>
+            <div class="line"></div>
+            <h3>+$455.00</h3>
+          </div>
+          <div class="payment-method">
+            <div class="method">
+              <h4>Payment Method</h4>
+              <span>+ ADD NEW CARD</span>
             </div>
-        </section>
+            <div class="mast">
+              <div class="master">
+                <div class="ash">
+                  <img
+                    src="./images/small-logos/mastercard.png"
+                    alt="master card"
+                  />
+                  <span
+                    >**** &nbsp&nbsp **** &nbsp&nbsp **** &nbsp&nbsp 7852</span
+                  >
+                </div>
+                <i class="fa-solid fa-pen"></i>
+              </div>
+              <div class="master">
+                <div class="ash">
+                  <img src="./images/small-logos/visa.png" alt="visa card" />
+                  <span
+                    >**** &nbsp&nbsp **** &nbsp&nbsp **** &nbsp&nbsp 7852</span
+                  >
+                </div>
+                <i class="fa-solid fa-pen"></i>
+              </div>
+            </div>
+          </div>
+          <div class="invoices">
+            <div class="header">
+              <h4>Invoices</h4>
+              <a href="#">VIEW ALL</a>
+            </div>
+            <div class="body">
+              <div class="march">
+                <h4>March, 01, 2020</h4>
+                <p>#MS-415246</p>
+              </div>
+              <div class="dolls">
+                <span>$180</span>
+                <div class="pdf">
+                  <i class="fa-solid fa-file"></i>
+                  <span>PDF</span>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <div class="march">
+                <h4>February, 10, 2021</h4>
+                <p>#RV-126749</p>
+              </div>
+              <div class="dolls">
+                <span>$250</span>
+                <div class="pdf">
+                  <i class="fa-solid fa-file"></i>
+                  <span>PDF</span>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <div class="march">
+                <h4>April, 05, 2020</h4>
+                <p>#FB-212562</p>
+              </div>
+              <div class="dolls">
+                <span>$560</span>
+                <div class="pdf">
+                  <i class="fa-solid fa-file"></i>
+                  <span>PDF</span>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <div class="march">
+                <h4>sjune, 25, 2019</h4>
+                <p>#QW-10.578</p>
+              </div>
+              <div class="dolls">
+                <span>$120</span>
+                <div class="pdf">
+                  <i class="fa-solid fa-file"></i>
+                  <span>PDF</span>
+                </div>
+              </div>
+            </div>
+            <div class="body">
+              <div class="march">
+                <h4>March, 01, 2019</h4>
+                <p>#AR-803481</p>
+              </div>
+              <div class="dolls">
+                <span>$300</span>
+                <div class="pdf">
+                  <i class="fa-solid fa-file"></i>
+                  <span>PDF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="billing-information">
+        <div class="container">
+          <div class="billing">
+            <h4>Billing Information</h4>
+            <div class="oliv">
+              <div class="header">
+                <h4>Oliver Liam</h4>
+                <div class="del">
+                  <span><i class="fa-solid fa-trash"></i>DELETE</span>
+                  <span><i class="fa-solid fa-pen"></i>EDIT</span>
+                </div>
+              </div>
+              <p>Company Name: <span>Viking Burrito</span></p>
+              <p>Email Address: <span>iheme.ifeanyi@yahoo.com</span></p>
+              <p>VAT Number: <span>FRB123456</span></p>
+            </div>
+            <div class="oliv">
+              <div class="header">
+                <h4>Lucas Harper</h4>
+                <div class="del">
+                  <span><i class="fa-solid fa-trash"></i>DELETE</span>
+                  <span><i class="fa-solid fa-pen"></i>EDIT</span>
+                </div>
+              </div>
+              <p>Company Name: <span>Stone Tech Aone</span></p>
+              <p>Email Address: <span>iheme.ifeanyi@yahoo.com</span></p>
+              <p>VAT Number: <span>FRB123456</span></p>
+            </div>
+            <div class="oliv">
+              <div class="header">
+                <h4>Ethan James</h4>
+                <div class="del">
+                  <span><i class="fa-solid fa-trash"></i>DELETE</span>
+                  <span><i class="fa-solid fa-pen"></i>EDIT</span>
+                </div>
+              </div>
+              <p>Company Name: <span>Fiber Notion</span></p>
+              <p>Email Address: <span>iheme.ifeanyi@yahoo.com</span></p>
+              <p>VAT Number: <span>FRB123456</span></p>
+            </div>
+          </div>
+          <div class="transaction">
+            <div class="header">
+              <h4>Your Transaction's</h4>
+              <span
+                ><i class="fa-solid fa-calendar-days"></i> 23 - 30 March
+                2020</span
+              >
+            </div>
+            <div class="newest">
+              <h5>NEWEST</h5>
+              <div class="net">
+                <div class="app">
+                  <i class="fa-solid fa-angle-down"></i>
+                  <div class="mar">
+                    <h4>Netflix</h4>
+                    <p>27 March 2020, at 12:30 PM</p>
+                  </div>
+                </div>
+                <span class="spant">-$ 2,500</span>
+              </div>
+              <div class="net">
+                <div class="app">
+                  <i class="fa-solid fa-angle-up"></i>
+                  <div class="mar">
+                    <h4>Apple</h4>
+                    <p>27 March 2020, at 4:30 PM</p>
+                  </div>
+                </div>
+                <span>-$ 2,000</span>
+              </div>
+            </div>
+            <div class="newest">
+              <h5>YESTERDAY</h5>
+              <div class="net">
+                <div class="app">
+                  <i class="fa-solid fa-angle-up"></i>
+                  <div class="mar">
+                    <h4>Stripe</h4>
+                    <p>26 March 2020, at 4:30 PM</p>
+                  </div>
+                </div>
+                <span>-$ 750</span>
+              </div>
+              <div class="net">
+                <div class="app">
+                  <i class="fa-solid fa-angle-up"></i>
+                  <div class="mar">
+                    <h4>HubSpot</h4>
+                    <p>26 March 2020, at 12:30 PM</p>
+                  </div>
+                </div>
+                <span>-$ 1,000</span>
+              </div>
+              <div class="net">
+                <div class="app">
+                  <i class="fa-solid fa-angle-up"></i>
+                  <div class="mar">
+                    <h4>Creative Tim</h4>
+                    <p>26 March 2020, at 8:30 AM</p>
+                  </div>
+                </div>
+                <span>-$ 2,500</span>
+              </div>
+              <div class="net">
+                <div class="app">
+                  <span class="excl">&#33;</span>
+                  <div class="mar">
+                    <h4>Webflow</h4>
+                    <p>26 March 2020, at 5:00 AM</p>
+                  </div>
+                </div>
+                <span class="spa">Pending</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
 
     <section id="data4" class="data">
-        <section id="profile-section">
-            <div class="container">
-                <div class="img-cont">
-                    <img src="./images/pxfuel.jpg" alt="a background image">
+      <section id="profile-section">
+        <div class="container">
+          <div class="img-cont">
+            <img src="./images/pxfuel.jpg" alt="a background image" />
+          </div>
+          <div class="second-cont">
+            <div class="profile">
+              <div class="profile-img">
+                <img src="./images/bruce-mars.jpg" alt="Bruce mars" />
+                <div class="title">
+                  <h3>Richard Davis</h3>
+                  <p>CEO / Co-Founder</p>
                 </div>
-                <div class="second-cont">
-                    <div class="profile">
-                        <div class="profile-img">
-                            <img src="./images/bruce-mars.jpg" alt="Bruce mars">
-                            <div class="title">
-                                <h3>Richard Davis</h3>
-                                <p>CEO / Co-Founder</p>
-                            </div>
-                        </div>
-                       <div class="list">
-                            <p><i class="fa-solid fa-home"></i> App</p>
-                            <p><i class="fa-solid fa-envelope"></i> Messages</p>
-                            <p><i class="fa-solid fa-gear"></i> Settings</p>
-                       </div>
-                    </div>
-                    <div class="grid">
-                        <div class="platform-setting">
-                            <h4>Platform Settings</h4>
-                            <div class="div">
-                                <p>ACCOUNT</p>
-                                <div class="toggle">
-                                    <span class="togglemod"></span>
-                                    <p>Email me when someone follows...</p>
-                                </div>
-                                <div class="toggle">
-                                    <span class="togglemod lightmod"></span>
-                                    <p>Email me when someone answers...</p>
-                                </div>
-                                <div class="toggle">
-                                    <span class="togglemod"></span>
-                                    <p>Email me when someone mention...</p>
-                                </div>
-                            </div>
-                            <div class="div">
-                                <p>APPLICATION</p>
-                                <div class="toggle">
-                                    <span class="togglemod"></span>
-                                    <p>new launches and projects</p>
-                                </div>
-                                <div class="toggle">
-                                    <span class="togglemod lightmod"></span>
-                                    <p>Monthly product updates</p>
-                                </div>
-                                <div class="toggle">
-                                    <span class="togglemod"></span>
-                                    <p>Suscribe to newsletter</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="profile-information">
-                            <h4>Profile Information</h4>
-                            <div class="icon">
-                                <i class="fa-solid fa-user-check"></i>
-                            </div>
-                            <p class="bio">
-                                Hi, I'm alec Thompson, Decsions: If you can't decide, the answer is no. If two
-                                equally difficult paths, choose the one more painful in the short term (pain
-                                avoidance is creating an illusion of equality).
-                            </p>
-                            <p class="str"><strong>Full Name:</strong>Alec M. Thompson</p>
-                            <p class="str"><strong>Mobile:</strong>08145663725</p>
-                            <p class="str"><strong>Email:</strong>iheme.ifeanyi@yahoo.com</p>
-                            <p class="str"><strong>Location:</strong>USA</p>
-                            <p class="str strt"><strong>Socials:</strong>
-                                <i class="fa-brands fa-facebook"></i>
-                                <i class="fa-brands fa-twitter"></i>
-                                <i class="fa-brands fa-instagram"></i>
-                            </p>
-                        </div>
-                        <div class="conversation">
-                            <h4>Converstion</h4>
-                            <div class="card-set">
-                                <div class="inner-set">
-                                    <img src="./images/team-1.jpg" alt="image">
-                                    <div>
-                                        <h5>Sophie B.</h5>
-                                        <p>Hi I read more information</p>
-                                    </div>
-                                </div>
-                                <p class="reply">Reply</p>
-                            </div>
-                            <div class="card-set">
-                                <div class="inner-set">
-                                    <img src="./images/team-2.jpg" alt="image">
-                                    <div>
-                                        <h5>Annie Marie</h5>
-                                        <p>Hi I need more information...</p>
-                                    </div>
-                                </div>
-                                <p class="reply">Reply</p>
-                            </div>
-                            <div class="card-set">
-                                <div class="inner-set">
-                                    <img src="./images/team-3.jpg" alt="image">
-                                    <div>
-                                        <h5>Ivanna</h5>
-                                        <p>Awesome work, can you...</p>
-                                    </div>
-                                </div>
-                                <p class="reply">Reply</p>
-                            </div>
-                            <div class="card-set">
-                                <div class="inner-set">
-                                    <img src="./images/team-4.jpg" alt="image">
-                                    <div>
-                                        <h5>Peterson</h5>
-                                        <p>About files I can...</p>
-                                    </div>
-                                </div>
-                                <p class="reply">Reply</p>
-                            </div>
-                            <div class="card-set">
-                                <div class="inner-set">
-                                    <img src="./images/team-5.jpg" alt="image">
-                                    <div>
-                                        <h5>Nick Daniel</h5>
-                                        <p>Hi I read more information</p>
-                                    </div>
-                                </div>
-                                <p class="reply">Reply</p>
-                            </div>
-                        </div>
-                    </div>
-                   <div class="main-project">
-                        <h4>Projects</h4>
-                        <p>Architectts design houses</p>
-                        <div class="proj-cont">
-                            <div class="card">
-                                <img src="images/home-decor-1.jpg" alt="member">
-                                <p class="rel">Project #2</p>
-                                <h3>Modern</h3>
-                                <p>As Uber works through a huge amount of internal management turmoil.</p>
-                                <div class="mem-cont">
-                                    <a href="#">VIEW PROJECT</a>
-                                    <div class="members">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="images/home-decor-2.jpg" alt="member">
-                                <p class="rel">Project #2</p>
-                                <h3>Scandinavian</h3>
-                                <p>As Uber works through a huge amount of internal management turmoil.</p>
-                                <div class="mem-cont">
-                                    <a href="#">VIEW PROJECT</a>
-                                    <div class="members">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="images/bg-smart-home-1.jpg" alt="member">
-                                <p class="rel">Project #2</p>
-                                <h3>Minimalist</h3>
-                                <p>As Uber works through a huge amount of internal management turmoil.</p>
-                                <div class="mem-cont">
-                                    <a href="#">VIEW PROJECT</a>
-                                    <div class="members">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="images/home-decor-3.jpg" alt="member">
-                                <p class="rel">Project #2</p>
-                                <h3>Gothic</h3>
-                                <p>As Uber works through a huge amount of internal management turmoil.</p>
-                                <div class="mem-cont">
-                                    <a href="#">VIEW PROJECT</a>
-                                    <div class="members">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                        <img src="images/img-1.jpg" alt="member">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
+              </div>
+              <div class="list">
+                <p><i class="fa-solid fa-home"></i> App</p>
+                <p><i class="fa-solid fa-envelope"></i> Messages</p>
+                <p><i class="fa-solid fa-gear"></i> Settings</p>
+              </div>
             </div>
-        </section>
+            <div class="grid">
+              <div class="platform-setting">
+                <h4>Platform Settings</h4>
+                <div class="div">
+                  <p>ACCOUNT</p>
+                  <div class="toggle">
+                    <span class="togglemod"></span>
+                    <p>Email me when someone follows...</p>
+                  </div>
+                  <div class="toggle">
+                    <span class="togglemod lightmod"></span>
+                    <p>Email me when someone answers...</p>
+                  </div>
+                  <div class="toggle">
+                    <span class="togglemod"></span>
+                    <p>Email me when someone mention...</p>
+                  </div>
+                </div>
+                <div class="div">
+                  <p>APPLICATION</p>
+                  <div class="toggle">
+                    <span class="togglemod"></span>
+                    <p>new launches and projects</p>
+                  </div>
+                  <div class="toggle">
+                    <span class="togglemod lightmod"></span>
+                    <p>Monthly product updates</p>
+                  </div>
+                  <div class="toggle">
+                    <span class="togglemod"></span>
+                    <p>Suscribe to newsletter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-information">
+                <h4>Profile Information</h4>
+                <div class="icon">
+                  <i class="fa-solid fa-user-check"></i>
+                </div>
+                <p class="bio">
+                  Hi, I'm alec Thompson, Decsions: If you can't decide, the
+                  answer is no. If two equally difficult paths, choose the one
+                  more painful in the short term (pain avoidance is creating an
+                  illusion of equality).
+                </p>
+                <p class="str"><strong>Full Name:</strong>Alec M. Thompson</p>
+                <p class="str"><strong>Mobile:</strong>08145663725</p>
+                <p class="str">
+                  <strong>Email:</strong>iheme.ifeanyi@yahoo.com
+                </p>
+                <p class="str"><strong>Location:</strong>USA</p>
+                <p class="str strt">
+                  <strong>Socials:</strong>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                </p>
+              </div>
+              <div class="conversation">
+                <h4>Converstion</h4>
+                <div class="card-set">
+                  <div class="inner-set">
+                    <img src="./images/team-1.jpg" alt="image" />
+                    <div>
+                      <h5>Sophie B.</h5>
+                      <p>Hi I read more information</p>
+                    </div>
+                  </div>
+                  <p class="reply">Reply</p>
+                </div>
+                <div class="card-set">
+                  <div class="inner-set">
+                    <img src="./images/team-2.jpg" alt="image" />
+                    <div>
+                      <h5>Annie Marie</h5>
+                      <p>Hi I need more information...</p>
+                    </div>
+                  </div>
+                  <p class="reply">Reply</p>
+                </div>
+                <div class="card-set">
+                  <div class="inner-set">
+                    <img src="./images/team-3.jpg" alt="image" />
+                    <div>
+                      <h5>Ivanna</h5>
+                      <p>Awesome work, can you...</p>
+                    </div>
+                  </div>
+                  <p class="reply">Reply</p>
+                </div>
+                <div class="card-set">
+                  <div class="inner-set">
+                    <img src="./images/team-4.jpg" alt="image" />
+                    <div>
+                      <h5>Peterson</h5>
+                      <p>About files I can...</p>
+                    </div>
+                  </div>
+                  <p class="reply">Reply</p>
+                </div>
+                <div class="card-set">
+                  <div class="inner-set">
+                    <img src="./images/team-5.jpg" alt="image" />
+                    <div>
+                      <h5>Nick Daniel</h5>
+                      <p>Hi I read more information</p>
+                    </div>
+                  </div>
+                  <p class="reply">Reply</p>
+                </div>
+              </div>
+            </div>
+            <div class="main-project">
+              <h4>Projects</h4>
+              <p>Architectts design houses</p>
+              <div class="proj-cont">
+                <div class="card">
+                  <img src="images/home-decor-1.jpg" alt="member" />
+                  <p class="rel">Project #2</p>
+                  <h3>Modern</h3>
+                  <p>
+                    As Uber works through a huge amount of internal management
+                    turmoil.
+                  </p>
+                  <div class="mem-cont">
+                    <a href="#">VIEW PROJECT</a>
+                    <div class="members">
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/home-decor-2.jpg" alt="member" />
+                  <p class="rel">Project #2</p>
+                  <h3>Scandinavian</h3>
+                  <p>
+                    As Uber works through a huge amount of internal management
+                    turmoil.
+                  </p>
+                  <div class="mem-cont">
+                    <a href="#">VIEW PROJECT</a>
+                    <div class="members">
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/bg-smart-home-1.jpg" alt="member" />
+                  <p class="rel">Project #2</p>
+                  <h3>Minimalist</h3>
+                  <p>
+                    As Uber works through a huge amount of internal management
+                    turmoil.
+                  </p>
+                  <div class="mem-cont">
+                    <a href="#">VIEW PROJECT</a>
+                    <div class="members">
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="images/home-decor-3.jpg" alt="member" />
+                  <p class="rel">Project #2</p>
+                  <h3>Gothic</h3>
+                  <p>
+                    As Uber works through a huge amount of internal management
+                    turmoil.
+                  </p>
+                  <div class="mem-cont">
+                    <a href="#">VIEW PROJECT</a>
+                    <div class="members">
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                      <img src="images/img-1.jpg" alt="member" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </section>
     </section>
 
     <section id="data5" class="data">
-        <div id="notification-section">
-            <div class="container1">
-                <h2>Alerts</h2>
-                <div class="alert">
-                    <div class="note">
-                        A simple primary alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                    <div class="note">
-                        A simple secondary alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                    <div class="note">
-                        A simple success alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                    <div class="note">
-                        A simple danger alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                    <div class="note">
-                        A simple warning alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                    <div class="note">
-                        A simple info alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                    <div class="note">
-                        A simple light alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                    <div class="note">
-                        A simple dark alert with an example link. Give it a click if you like.
-                        <i class="fa-solid fa-xmark exit-note"></i>
-                    </div>
-                </div>
+      <div id="notification-section">
+        <div class="container1">
+          <h2>Alerts</h2>
+          <div class="alert">
+            <div class="note">
+              A simple primary alert with an example link. Give it a click if
+              you like.
+              <i class="fa-solid fa-xmark exit-note"></i>
             </div>
-            <div class="container2">
-                <div class="header">
-                    <h2>Notifications</h2>
-                    <p>Notifications on the page use Toasts from Bootstrap. Read more details here.</p>
-                </div>
-                <div class="btn">
-                    <button class="success">success</button>
-                    <button class="info">info</button>
-                    <button class="warning">warning</button>
-                    <button class="danger">danger</button>
-                </div>
+            <div class="note">
+              A simple secondary alert with an example link. Give it a click if
+              you like.
+              <i class="fa-solid fa-xmark exit-note"></i>
             </div>
-            <div class="container3">
-                <div class="notal success-note">
-                    <div class="header">
-                        <div class="he1">
-                            <i class="fa-solid fa-check"></i>
-                            <h3>Material Dashboard</h3>
-                        </div>
-                        <div class="he2">
-                            <span>11 mins ago</span>
-                            <i class="fa-solid fa-xmark ten"></i>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <p>Hello, world! This is a notification message.</p>
-                </div>
-                <div class="notal info-note">
-                    <div class="header">
-                        <div class="he1">
-                            <i class="fa-solid fa-bell"></i>
-                            <h3>Material Dashboard</h3>
-                        </div>
-                        <div class="he2">
-                            <span>11 mins ago</span>
-                            <i class="fa-solid fa-xmark ten"></i>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <p>Hello, world! This is a notification message.</p>
-                </div>
-                <div class="notal warning-note">
-                    <div class="header">
-                        <div class="he1">
-                            <i class="fa-solid fa-compass"></i>
-                            <h3>Material Dashboard</h3>
-                        </div>
-                        <div class="he2">
-                            <span>11 mins ago</span>
-                            <i class="fa-solid fa-xmark ten"></i>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <p>Hello, world! This is a notification message.</p>
-                </div>
-                <div class="notal danger-note">
-                    <div class="header">
-                        <div class="he1">
-                            <i class="fa-solid fa-bullhorn"></i>
-                            <h3>Material Dashboard</h3>
-                        </div>
-                        <div class="he2">
-                            <span>11 mins ago</span>
-                            <i class="fa-solid fa-xmark ten"></i>
-                        </div>
-                    </div>
-                    <div class="line"></div>
-                    <p>Hello, world! This is a notification message.</p>
-                </div>
+            <div class="note">
+              A simple success alert with an example link. Give it a click if
+              you like.
+              <i class="fa-solid fa-xmark exit-note"></i>
             </div>
+            <div class="note">
+              A simple danger alert with an example link. Give it a click if you
+              like.
+              <i class="fa-solid fa-xmark exit-note"></i>
+            </div>
+            <div class="note">
+              A simple warning alert with an example link. Give it a click if
+              you like.
+              <i class="fa-solid fa-xmark exit-note"></i>
+            </div>
+            <div class="note">
+              A simple info alert with an example link. Give it a click if you
+              like.
+              <i class="fa-solid fa-xmark exit-note"></i>
+            </div>
+            <div class="note">
+              A simple light alert with an example link. Give it a click if you
+              like.
+              <i class="fa-solid fa-xmark exit-note"></i>
+            </div>
+            <div class="note">
+              A simple dark alert with an example link. Give it a click if you
+              like.
+              <i class="fa-solid fa-xmark exit-note"></i>
+            </div>
+          </div>
         </div>
+        <div class="container2">
+          <div class="header">
+            <h2>Notifications</h2>
+            <p>
+              Notifications on the page use Toasts from Bootstrap. Read more
+              details here.
+            </p>
+          </div>
+          <div class="btn">
+            <button class="success">success</button>
+            <button class="info">info</button>
+            <button class="warning">warning</button>
+            <button class="danger">danger</button>
+          </div>
+        </div>
+        <div class="container3">
+          <div class="notal success-note">
+            <div class="header">
+              <div class="he1">
+                <i class="fa-solid fa-check"></i>
+                <h3>Material Dashboard</h3>
+              </div>
+              <div class="he2">
+                <span>11 mins ago</span>
+                <i class="fa-solid fa-xmark ten"></i>
+              </div>
+            </div>
+            <div class="line"></div>
+            <p>Hello, world! This is a notification message.</p>
+          </div>
+          <div class="notal info-note">
+            <div class="header">
+              <div class="he1">
+                <i class="fa-solid fa-bell"></i>
+                <h3>Material Dashboard</h3>
+              </div>
+              <div class="he2">
+                <span>11 mins ago</span>
+                <i class="fa-solid fa-xmark ten"></i>
+              </div>
+            </div>
+            <div class="line"></div>
+            <p>Hello, world! This is a notification message.</p>
+          </div>
+          <div class="notal warning-note">
+            <div class="header">
+              <div class="he1">
+                <i class="fa-solid fa-compass"></i>
+                <h3>Material Dashboard</h3>
+              </div>
+              <div class="he2">
+                <span>11 mins ago</span>
+                <i class="fa-solid fa-xmark ten"></i>
+              </div>
+            </div>
+            <div class="line"></div>
+            <p>Hello, world! This is a notification message.</p>
+          </div>
+          <div class="notal danger-note">
+            <div class="header">
+              <div class="he1">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h3>Material Dashboard</h3>
+              </div>
+              <div class="he2">
+                <span>11 mins ago</span>
+                <i class="fa-solid fa-xmark ten"></i>
+              </div>
+            </div>
+            <div class="line"></div>
+            <p>Hello, world! This is a notification message.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="right-sidebar">
-        <div class="container">
-            <div class="section-header">
-                <h2>Material UI Configurator</h2>
-                <p>See or dashboard options.</p>
-                <i class="fa-solid fa-xmark close-config"></i>
-            </div>
-            <div class="line"></div>
-            <h4>Sidebar Colors</h4>
-            <div class="sidebar-colors">
-                <span class="side" data-color="#f83e7c"></span>
-                <span class="side" data-color="#c553c5"></span>
-                <span class="side" data-color="#49a3f1"></span>
-                <span class="side" data-color="#5fd265"></span>
-                <span class="side" data-color="#e19507"></span>
-                <span class="side" data-color="#ea4e15ed"></span>
-            </div>
-            <h4>Sidenav Type</h4>
-            <p>Choose between 2 different sidenav types.</p>
-            <div class="type">
-                <button class="btn1 btn focus">DARK</button>
-                <button class="btn2 btn">TRANSPARENT</button>
-                <button class="btn3 btn">WHITE</button>
-            </div>
-            <P class="change">You can change the sidenav type just on desktop view.</P>
-            <div class="toggle">
-                <p>Navbar Fixed</p>
-                <span class="fix-mode"></span>
-            </div>
-            <div class="line toggle-line"></div>
-            <div class="toggle lightmode">
-                <p>Light / Dark</p>
-                <span class="togglemode"></span>
-            </div>
-            <div class="line toggle-line"></div>
-            <div class="bttn">
-                <a href="#">FREE DOWNLOAD</a>
-                <a href="#">VIEW DOCUMENTATION</a>
-            </div>
-           <div class="rating">
-            <a class="star" href="#"><i class="fa-regular fa-star"></i>Star</a>
-            <span>10,664</span>
-           </div>
-            <p class="align">Thank you for sharing!</p>
-            <div class="socials">
-                <a href="#"><i class="fa-brands fa-twitter"></i>TWEET</a>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i>SHARE</a>
-            </div>
-
+      <div class="container">
+        <div class="section-header">
+          <h2>Material UI Configurator</h2>
+          <p>See or dashboard options.</p>
+          <i class="fa-solid fa-xmark close-config"></i>
         </div>
+        <div class="line"></div>
+        <h4>Sidebar Colors</h4>
+        <div class="sidebar-colors">
+          <span class="side" data-color="#f83e7c"></span>
+          <span class="side" data-color="#c553c5"></span>
+          <span class="side" data-color="#49a3f1"></span>
+          <span class="side" data-color="#5fd265"></span>
+          <span class="side" data-color="#e19507"></span>
+          <span class="side" data-color="#ea4e15ed"></span>
+        </div>
+        <h4>Sidenav Type</h4>
+        <p>Choose between 2 different sidenav types.</p>
+        <div class="type">
+          <button class="btn1 btn focus">DARK</button>
+          <button class="btn2 btn">TRANSPARENT</button>
+          <button class="btn3 btn">WHITE</button>
+        </div>
+        <p class="change">
+          You can change the sidenav type just on desktop view.
+        </p>
+        <div class="toggle">
+          <p>Navbar Fixed</p>
+          <span class="fix-mode"></span>
+        </div>
+        <div class="line toggle-line"></div>
+        <div class="toggle lightmode">
+          <p>Light / Dark</p>
+          <span class="togglemode"></span>
+        </div>
+        <div class="line toggle-line"></div>
+        <div class="bttn">
+          <a href="#">FREE DOWNLOAD</a>
+          <a href="#">VIEW DOCUMENTATION</a>
+        </div>
+        <div class="rating">
+          <a class="star" href="#"><i class="fa-regular fa-star"></i>Star</a>
+          <span>10,664</span>
+        </div>
+        <p class="align">Thank you for sharing!</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-twitter"></i>TWEET</a>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i>SHARE</a>
+        </div>
+      </div>
     </section>
 
     <section id="material-section">
-        <i class="fa-solid fa-gear"></i>
+      <i class="fa-solid fa-gear"></i>
     </section>
 
     <footer id="main-footer">
-        <div class="container">
-            <p>&copy 2023, recreated with <i class="fa-solid fa-heart"></i> by <span>Ifeanyi Iheme</span> for a better web and growth purpose.</p>
-            <ul>
-                <li><a href="#">Creative Tim</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">License</a></li>
-            </ul>
-        </div>
+      <div class="container">
+        <p>
+          &copy 2023, recreated with <i class="fa-solid fa-heart"></i> by
+          <span>Ifeanyi Iheme</span> for a better web and growth purpose.
+        </p>
+        <ul>
+          <li><a href="#">Creative Tim</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">License</a></li>
+        </ul>
+      </div>
     </footer>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
