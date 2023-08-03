@@ -1,8 +1,8 @@
 //Main Naviagtion
 
 const nav = document.getElementById("main-nav");
-let open_nav = document.querySelector(".open");
-let exit_nav = document.querySelector(".exit");
+const open_nav = document.querySelector(".open");
+const exit_nav = document.querySelector(".exit");
 
 const navTransform = (translate, hidden) => {
   nav.style.transform = translate;
@@ -19,10 +19,10 @@ exit_nav.addEventListener("click", () => {
 
 //Right Sidebar Navigation
 
-let side_nav = document.getElementById("right-sidebar");
-let open_config = document.querySelector(".open-config");
-let close_config = document.querySelector(".close-config");
-let material = document.getElementById("material-section");
+const side_nav = document.getElementById("right-sidebar");
+const open_config = document.querySelector(".open-config");
+const close_config = document.querySelector(".close-config");
+const material = document.getElementById("material-section");
 
 const rightNavTransform = (translate, hidden) => {
   side_nav.style.transform = translate;
@@ -82,17 +82,16 @@ fixMode.addEventListener("click", () => {
 });
 
 //Action Navbar
-const actionBtn = document.querySelector(".action-btn");
-if (actionBtn) {
-  actionBtn.addEventListener("click", () => {
-    const action = document.querySelector(".action");
-    if (action.lastElementChild.style.opacity == 0) {
-      action.lastElementChild.style.opacity = 1;
-    } else {
-      action.lastElementChild.style.opacity = 0;
-    }
-  });
-}
+const action = document.querySelector(".action");
+action.addEventListener("click", function (e) {
+  const actionBtn = e.target.closest(".action-btn");
+  if (!actionBtn) return;
+  if (action.lastElementChild.style.opacity == 0) {
+    action.lastElementChild.style.opacity = 1;
+  } else {
+    action.lastElementChild.style.opacity = 0;
+  }
+});
 
 //Toggle sections
 const bottomList = document.querySelector(".bottom-list");
@@ -132,22 +131,19 @@ document.querySelectorAll(".gator").forEach((gator) => {
     if (mq.matches) {
       navTransform("translate(-100%)", "visible");
     }
-
-    //Navbar link colors onclick event located at the right side bar
-    sideColor.forEach((sidebtn) => {
-      sidebtn.addEventListener("click", () => {
-        if (gator.classList.contains("current")) {
-          gator.style.background = sidebtn.dataset.color;
-        } else {
-          gator.style.background = "transparent";
-        }
-
-        bottomList.firstElementChild.style.borderColor = sidebtn.dataset.color;
-        bottomList.firstElementChild.style.color = sidebtn.dataset.color;
-        bottomList.lastElementChild.style.background = sidebtn.dataset.color;
-      });
-    });
   };
+});
+
+//Navbar link colors onclick event located at the right side bar
+sideColor.forEach((sidebtn) => {
+  sidebtn.addEventListener("click", () => {
+    const current = document.querySelector(".current");
+    current.style.background = sidebtn.dataset.color;
+
+    bottomList.firstElementChild.style.borderColor = sidebtn.dataset.color;
+    bottomList.firstElementChild.style.color = sidebtn.dataset.color;
+    bottomList.lastElementChild.style.background = sidebtn.dataset.color;
+  });
 });
 
 //Side Nav Type
@@ -172,6 +168,7 @@ function navAnim(a, b, c, d) {
   body.style.left = d;
 }
 
+//TOGGLE NAVBAR WIDTH SIZE
 const side = document.querySelector(".side");
 side.addEventListener("click", () => {
   document.querySelectorAll(".joy").forEach((joey) => {
@@ -204,28 +201,51 @@ document.querySelectorAll(".exit-note").forEach((exit) => {
   });
 });
 
-document.querySelectorAll(".ten").forEach((ten) => {
-  ten.addEventListener("click", (e) => {
-    e.target.parentElement.parentElement.parentElement.style.display = "none";
-  });
+// METHOD 1
+const containerBtn = document.querySelector(".container-btn");
+containerBtn.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".ten");
+  if (!clicked) return;
+  const parentEle = e.target.closest(".notal");
+  parentEle.style.display = "none";
 });
 
-const noteSeting = (item) => {
-  document.querySelector(item).style.display = "block";
+// //METHOD 2
+// document.querySelectorAll(".ten").forEach((ten) => {
+//   ten.addEventListener("click", (e) => {
+//     e.target.parentElement.parentElement.parentElement.style.display = "none";
+//   });
+// });
+
+//METHOD: data attribute, event.target
+const noteSeting = document.querySelector(".btn");
+noteSeting.addEventListener("click", function (e) {
+  const clicked = e.target.closest(".btn--color");
+  document.querySelector(`.notal-${clicked.dataset.btn}`).style.display =
+    "block";
   setTimeout(() => {
-    document.querySelector(item).style.display = "none";
+    document.querySelector(`.notal-${clicked.dataset.btn}`).style.display =
+      "none";
   }, 5000);
-};
+});
 
-document.querySelector(".success").addEventListener("click", () => {
-  noteSeting(".success-note");
-});
-document.querySelector(".info").addEventListener("click", () => {
-  noteSeting(".info-note");
-});
-document.querySelector(".warning").addEventListener("click", () => {
-  noteSeting(".warning-note");
-});
-document.querySelector(".danger").addEventListener("click", () => {
-  noteSeting(".danger-note");
-});
+// //METHOD 2 querySelector
+// const noteSeting = (item) => {
+//   document.querySelector(item).style.display = "block";
+//   setTimeout(() => {
+//     document.querySelector(item).style.display = "none";
+//   }, 5000);
+// };
+
+// document.querySelector(".success").addEventListener("click", () => {
+//   noteSeting(".success-note");
+// });
+// document.querySelector(".info").addEventListener("click", () => {
+//   noteSeting(".info-note");
+// });
+// document.querySelector(".warning").addEventListener("click", () => {
+//   noteSeting(".warning-note");
+// });
+// document.querySelector(".danger").addEventListener("click", () => {
+//   noteSeting(".danger-note");
+// });
