@@ -28,6 +28,9 @@ Stay informed about important updates, messages, and events within the app throu
 
 - **Customizable Sidebar:** Personalize the dashboard's sidebar by selecting different background colors and link colors, allowing you to create a visually appealing and personalized dashboard interface.
 
+## Website URL
+You can visit the project website at: dashboard-theta-hazel.vercel.app
+
 ## Getting Started
 
 1. Clone this repository.
